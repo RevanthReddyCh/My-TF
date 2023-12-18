@@ -1,17 +1,17 @@
-resource "aws_vpc" "MyVPC" {
+resource "aws_vpc" "My1stVPC" {
   cidr_block = "10.0.0.0/16"  # Replace with your desired CIDR block for the VPC
 
   enable_dns_support = true
   enable_dns_hostnames = true
 
   tags = {
-    Name = "2ndvpc"
+    Name = "My1stVPC"
   }
 
 }
 
 resource "aws_subnet" "public_subnet" {
-  vpc_id                  = aws_vpc.MyVPC.id
+  vpc_id                  = aws_vpc.My1stVPC.id
   cidr_block              = "10.0.0.0/28"  # Replace with your desired CIDR block for the subnet
   availability_zone       = "ap-south-2a"    # Replace with your desired availability zone
 
@@ -21,7 +21,7 @@ resource "aws_subnet" "public_subnet" {
 }
 
 resource "aws_subnet" "private_subnet" {
-  vpc_id                  = aws_vpc.MyVPC.id
+  vpc_id                  = aws_vpc.My1stVPC.id
   cidr_block              = "10.0.1.0/28"  # Replace with your desired CIDR block for the subnet
   availability_zone       = "ap-south-2a"    # Replace with your desired availability zone
 
