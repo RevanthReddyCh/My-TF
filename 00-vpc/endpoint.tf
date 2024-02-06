@@ -47,7 +47,7 @@ resource "aws_vpc_endpoint" "s3_endpoint" {
   vpc_id = aws_vpc.My1stVPC.id
   service_name = "com.amazonaws.ap-south-2.s3"
   
-  route_table_ids = [aws_route_table.public_route_table.id]
+  route_table_ids = [aws_route_table.private_route_table.id]
 
   tags = {
     Name = "S3Endpoint"
