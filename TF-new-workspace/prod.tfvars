@@ -1,0 +1,8 @@
+vpc-name      = "prod"
+vpc_cidr      = "162.0.0.0/16"
+pub-sub1-cidr = "162.0.1.0/26"
+pub-sub2-cidr = "162.0.2.0/26"
+pri-sub1-cidr = "162.0.3.0/26"
+pri-sub2-cidr = "162.0.4.0/26"
+ami           = "ami-0c7217cdde317cfec"
+instance_type = "t2.micro"
