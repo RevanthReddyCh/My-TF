@@ -8,7 +8,7 @@ resource "aws_vpc" "myvpc" {
 resource "aws_subnet" "pub-subnets" {
   vpc_id = aws_vpc.myvpc.id
   count = length(var.subnets_cidr)
-  availability_zone = "us-east-1a"
+  availability_zone = element(var.azs,count.index)
   cidr_block = var.subnets_cidr[count.index]
 
   tags = {
