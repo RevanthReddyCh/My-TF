@@ -1,7 +1,17 @@
 resource "aws_vpc" "myvpc" {
   cidr_block = var.vpc-cidr
+  enable_dns_support   = true
+  enable_dns_hostnames = true
   tags = {
     Name = "${var.vpc-name}"
+  }
+}
+
+resource "aws_internet_gateway" "first_igw" {
+  vpc_id = aws_vpc.myvpc.id
+
+  tags = {
+    Name = "MyIGW"
   }
 }
 
