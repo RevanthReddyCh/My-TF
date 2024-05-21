@@ -1,0 +1,3 @@
+TF-IMPORT&DATA/.terraform/*
+TF-IMPORT&DATA/terraform.tfstate
+TF-IMPORT&DATA/.terraform*
