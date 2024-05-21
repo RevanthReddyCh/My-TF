@@ -1,0 +1,3 @@
+IMPORT&DATA SESSION/.terraform/*
+IMPORT&DATA SESSION/terraform.tfstate
+IMPORT&DATA SESSION/.terraform*
