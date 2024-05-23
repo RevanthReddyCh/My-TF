@@ -1,0 +1,6 @@
+variable "vpc-name" {}
+variable "vpc_cidr" {}
+variable "pub-sub-cidr" {}
+variable "pri-sub-cidr" {}
+variable "ami" {}
+variable "instance-type" {}

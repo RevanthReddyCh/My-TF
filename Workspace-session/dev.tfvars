@@ -1,0 +1,6 @@
+vpc-name      = "dev"
+vpc_cidr      = "196.0.0.0/16"
+pub-sub-cidr = "196.0.1.0/26"
+pri-sub-cidr = "196.0.2.0/26"
+ami           = "ami-09040d770ffe2224f"
+instance-type = "t2.micro"

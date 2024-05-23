@@ -1,0 +1,6 @@
+vpc-name      = "qa"
+vpc_cidr      = "172.168.0.0/16"
+pub-sub-cidr = "172.168.1.0/26"
+pri-sub-cidr = "172.168.2.0/26"
+ami           = "ami-09040d770ffe2224f"
+instance-type = "t2.micro"
