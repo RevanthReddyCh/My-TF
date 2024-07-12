@@ -5,3 +5,4 @@ variable "instance-type" {}
 variable "ami" {}
 variable "az" {}
 variable "instance-name" {}
+variable "region" {}

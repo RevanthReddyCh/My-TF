@@ -1,5 +1,4 @@
-.terraform
-.DS_Store
-.swp
-.swo
-B:\tf-repo\My-TF\TF-new-workspace\terraform.tfstate.d\
+.terraform/*
+terraform.tfstate*
+/.terraform*
+/terraform.tfstate*

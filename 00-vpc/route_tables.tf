@@ -12,7 +12,7 @@ resource "aws_route_table" "public_route_table" {
     nat_gateway_id = aws_nat_gateway.First_nat_gateway.id
   }
 
-  tags = {
+  tags = {  
     Name = "PublicRouteTable"
   }
 }
